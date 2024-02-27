@@ -35,7 +35,7 @@
 
 
 //! Promesas y su uso
-const getPokemonByID = require('./js-foundation/06-promises');
+// const getPokemonByID = require('./js-foundation/06-promises');
 
 // console.log(getPokemonByID(1));
 // const bulbasur= async(id) => {
@@ -58,9 +58,9 @@ const getPokemonByID = require('./js-foundation/06-promises');
 //publicas
 
 //!winston logger con plugin
-const {buildLogger} = require('./plugins');
+// const {buildLogger} = require('./plugins');
 
-const logger = buildLogger('app.js');
+// const logger = buildLogger('app.js');
 
-logger.log('Hola mundo');
-logger.error('Esto es algo malo');
+// logger.log('Hola mundo');
+// logger.error('Esto es algo malo');
