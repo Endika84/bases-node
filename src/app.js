@@ -49,10 +49,18 @@ const getPokemonByID = require('./js-foundation/06-promises');
 
 // const pokemonName= getPokemonByID(1);
 
-getPokemonByID(1)
-    .then(pokemon => console.log({pokemon}))
-    .catch(error => console.log('Por favor intente de nuevo'))
-    .finally(() =>console.log('Finalmente'));
+// getPokemonByID(1)
+//     .then(pokemon => console.log({pokemon}))
+//     .catch(error => console.log('Por favor intente de nuevo'))
+//     .finally(() =>console.log('Finalmente'));
 
 //token de acceso
 //publicas
+
+//!winston logger con plugin
+const {buildLogger} = require('./plugins');
+
+const logger = buildLogger('app.js');
+
+logger.log('Hola mundo');
+logger.error('Esto es algo malo');
